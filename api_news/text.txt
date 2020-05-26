@@ -1,0 +1,15 @@
+RewriteEngine On # Activer le module Rewrite
+RewriteRule ^category/?$ category.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ category.php?id=$1 [L]
+
+RewriteRule ^comments/?$ comments.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ comments.php?id=$1 [NC,L]
+
+RewriteRule ^news/?$ news.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ news.php?id=$1 [NC,L]
+
+RewriteRule ^notification/?$ notification.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ notification.php?id=$1 [NC,L]
+
+RewriteRule ^users/?$ users.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ users.php?id=$1 [NC,L]

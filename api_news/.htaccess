@@ -1,0 +1,36 @@
+RewriteEngine On
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^category/?$ category.php [NC,L]
+RewriteRule ^category/([a-z0-9]+)$ category.php?id=$1 [L]
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^comments/?$ comments.php [NC,L]
+RewriteRule ^comments/([a-z0-9]+)$ comments.php?id=$1 [L]
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^news/?$ news.php [NC,L]
+RewriteRule ^news/([a-z0-9]+)$ news.php?id=$1 [L]
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^notification/?$ notification.php [NC,L]
+RewriteRule ^notification/([a-z0-9]+)$ notification.php?id=$1 [L]
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^users/?$ users.php [NC,L]
+RewriteRule ^users/([a-z0-9]+)$ users.php?id=$1 [L]
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^forget_pass/?$ forget_pass.php [NC,L]
+RewriteRule ^forget_pass/([a-z0-9]+)$ forget_pass.php?id=$1 [L]
+
+
+
+
+
